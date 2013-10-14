@@ -1,0 +1,22 @@
+{
+  "name": "map-stream-limit",
+  "version": "0.0.0",
+  "description": "Like map-stream but with concurrency limit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:parshap/map-stream-limit-organizer.git"
+  },
+  "author": "Parsha Pourkhomami",
+  "license": "Public Domain",
+  "bugs": {
+    "url": "https://github.com/parshap/map-stream-limit/issues"
+  },
+  "dependencies": {
+    "map-stream": "0.0.3",
+    "through": "~2.3.4"
+  }
+}
