@@ -4,7 +4,7 @@
   "description": "Like map-stream but with concurrency limit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "dependencies": {
     "map-stream": "0.0.3",
     "through": "~2.3.4"
+  },
+  "devDependencies": {
+    "tape": "~1.1.1"
   }
 }
