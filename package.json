@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:parshap/map-stream-limit-organizer.git"
+    "url": "git@github.com:parshap/map-stream-limit.git"
   },
   "author": "Parsha Pourkhomami",
   "license": "Public Domain",
