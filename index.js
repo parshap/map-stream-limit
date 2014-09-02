@@ -24,7 +24,7 @@ module.exports = function(asyncFn, limit) {
 		});
 	});
 
-	mapStream.pipe(stream);
+	mapStream.on("data", stream.queue.bind(stream));
 
 	return stream;
 
