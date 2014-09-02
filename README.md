@@ -21,7 +21,10 @@ map(function(data, callback) {
 Create a map-stream with the given asynchronous function but no more than the
 given limit will be running at any given time.
 
-# Installation 
+A `"drain"` event will be emitted when the internal buffer is empty and
+the last remaining item being processed is finished.
+
+# Installation
 
 ```
 npm install map-stream-limit

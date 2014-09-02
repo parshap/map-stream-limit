@@ -2,6 +2,7 @@ var test = require("tape");
 var mapLimit = require("./");
 
 test("one at a time", function(t) {
+	t.plan(8);
 	var waiting = false;
 	var stream = mapLimit(function(data, callback) {
 		t.ok( ! waiting);
@@ -19,6 +20,9 @@ test("one at a time", function(t) {
 	var datas = [];
 	stream.on("data", function(data) {
 		datas.push(data);
+	});
+	stream.on("drain", function() {
+		t.equal(datas.length, 3);
 	});
 	stream.on("end", function() {
 		t.equal(datas.length, 3);

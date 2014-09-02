@@ -41,6 +41,9 @@ module.exports = function(asyncFn, limit) {
 		if (buffer.length && waiting < limit) {
 			write(buffer.shift());
 		}
+		else if (buffer.length === 0 && waiting === 0) {
+			stream.emit("drain");
+		}
 	}
 
 	function maybeEnd() {
