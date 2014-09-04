@@ -1,6 +1,6 @@
 {
   "name": "map-stream-limit",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Like map-stream but with concurrency limit",
   "main": "index.js",
   "scripts": {
